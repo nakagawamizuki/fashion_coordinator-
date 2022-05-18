@@ -1,99 +1,79 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+@extends('layouts.app')
+@section('title', '自作アプリ')
+@section('content')
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel" data-interval="5000" data-wrap="true" data-pause="false">
+      <ul class="carousel-indicators">
+        <li data-target="carouselExampleInterval" data-slide-to="0" class="active"></li>
+        <li data-target="carouselExampleInterval" data-slide-to="1"></li>
+        <li data-target="carouselExampleInterval" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{ asset('/images/summer.JPEG') }}" class="d-block" alt="summer.JPEG">
         </div>
-    </body>
-</html>
+        <div class="carousel-item">
+          <img src="{{ asset('/images/accessory2.jpg') }}" class="d-block" alt="accessory2.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ asset('/images/denim1.jpg') }}" class="d-block" alt="denim1.jpg">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <!--<span class="visually-hidden">Previous</span>-->
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <!--<span class="visually-hidden">Next</span>-->
+      </button>
+    </div>
+    <div>
+      <h2>イチオシ</h2>
+      <ul id="onepress">
+        <li class="one">
+          <a href="https://4a712155da2746ad8379819c8fd62f11.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/tshirt.html">
+            <img src="images2/Tshirt.JPEG" alt="Tシャツ">
+          </a>
+        </li>
+        <li class="one">
+          <a href="https://4a712155da2746ad8379819c8fd62f11.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/denim.html">
+            <img src="images2/denim1.jpg" alt="デニム">
+          </a>
+        </li>
+        <li class="one">
+          <a href="https://4a712155da2746ad8379819c8fd62f11.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/accessory.html">
+            <img src="images2/accessory.JPEG" alt="アクセサリー">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="category">
+      <h2>カテゴリから探す</h2>
+      <ul class="category">
+        <li>
+          <img src="images1/whiteT.jpg" alt="whiteT.jpg">
+          <h3>トップス</h3>
+        </li>
+        <li>
+          <img src="images1/denim.jpeg" alt="denim.jpeg">
+          <h3>パンツ</h3>
+        </li>
+        <li>
+          <img src="images1/skirt.webp" alt="skirt.webp">
+          <h3>スカート</h3>
+        </li>
+        <li>
+          <img src="images1/dress.webp" alt="dress.webp">
+          <h3>ワンピース</h3>
+        </li>
+        <li>
+          <img src="images1/coat.webp" alt="coat.webp">
+          <h3>アウター</h3>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>ランキング</h2>
+      <!--いいね数が多いランキング-->
+    </div>
+@endsection
