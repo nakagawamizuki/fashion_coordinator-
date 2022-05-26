@@ -12,10 +12,12 @@
           <img src="{{ asset('/images/summer.JPEG') }}" class="d-block" alt="夏">
         </div>
         <div class="carousel-item">
-          <img src="{{ asset('/images/accessory.jpg') }}" class="d-block" alt="アクセサリー">
+          <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/accessory.html">
+            <img src="{{ asset('/images/accessory.JPEG') }}" class="d-block" alt="アクセサリー">
         </div>
         <div class="carousel-item">
-          <img src="{{ asset('/images/denim1.jpg') }}" class="d-block" alt="デニム1.jpg">
+          <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/denim.html">
+            <img src="{{ asset('/images/denim1.jpg') }}" class="d-block" alt="デニム1">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -31,18 +33,18 @@
       <h2>イチオシ</h2>
       <ul id="onepress">
         <li class="one">
-          <a href="https://4a712155da2746ad8379819c8fd62f11.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/tshirt.html">
-            <img src="images2/Tshirt.JPEG" alt="Tシャツ">
+          <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/tshirt.html">
+            <img src="images/Tshirt.JPEG" alt="Tシャツ">
           </a>
         </li>
         <li class="one">
-          <a href="https://4a712155da2746ad8379819c8fd62f11.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/denim.html">
-            <img src="images2/denim1.jpg" alt="デニム">
+          <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/denim.html">
+            <img src="images/denim1.jpg" alt="デニム">
           </a>
         </li>
         <li class="one">
-          <a href="https://4a712155da2746ad8379819c8fd62f11.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/accessory.html">
-            <img src="images2/accessory.JPEG" alt="アクセサリー">
+          <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/accessory.html">
+            <img src="images/accessory.JPEG" alt="アクセサリー">
           </a>
         </li>
       </ul>
@@ -51,23 +53,23 @@
       <h2>カテゴリから探す</h2>
       <ul class="category">
         <li>
-          <img src="images1/whiteT.jpg" alt="whiteT.jpg">
+          <img src="images/whiteT.jpg" alt="トップス">
           <h3>トップス</h3>
         </li>
         <li>
-          <img src="images1/denim.jpeg" alt="denim.jpeg">
+          <img src="images/denim.jpeg" alt="パンツ">
           <h3>パンツ</h3>
         </li>
         <li>
-          <img src="images1/skirt.webp" alt="skirt.webp">
+          <img src="images/skirt.webp" alt="スカート">
           <h3>スカート</h3>
         </li>
         <li>
-          <img src="images1/dress.webp" alt="dress.webp">
+          <img src="images/dress.webp" alt="ワンピース">
           <h3>ワンピース</h3>
         </li>
         <li>
-          <img src="images1/coat.webp" alt="coat.webp">
+          <img src="images/coat.webp" alt="アウター">
           <h3>アウター</h3>
         </li>
       </ul>
