@@ -22,19 +22,24 @@
       <div class="collapse navbar-collapse" id="nav-bar">
         <ul class="navbar-nav">
         　@if(Auth::check())
-        　
-        　<li class="nav-item active">
-            <a href="#" class="nav-link">マイページ</a>
-          </li>
-          <li class="nav-item active">
-            <a href="#" class="nav-link">お気に入り</a>
-          </li>
-          <li class="nav-item active">
-            <a href="#" class="nav-link">会員情報の確認・変更</a>
-          </li>
-          <li class="nav-item active">
-            <a href="#" class="nav-link">お問い合わせ</a>
-          </li>
+              @if(Auth::user()->role === 2)
+              　<li class="nav-item active">
+                  <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/mypage.html" class="nav-link">マイページ</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="#" class="nav-link">お気に入り</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="#" class="nav-link">投稿</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="#" class="nav-link">お問い合わせ</a>
+                </li>
+              @else
+                <li class="nav-item active">
+                  <a href="#" class="nav-link">お客一覧</a>
+                </li>
+              @endif
           <li class="nav-item">
             <a href="/logout" class="nav-link">ログアウト</a>
           </li>
