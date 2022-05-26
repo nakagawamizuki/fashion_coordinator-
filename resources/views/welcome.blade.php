@@ -9,13 +9,13 @@
       </ul>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="{{ asset('/images/summer.JPEG') }}" class="d-block" alt="summer.JPEG">
+          <img src="{{ asset('/images/summer.JPEG') }}" class="d-block" alt="夏">
         </div>
         <div class="carousel-item">
-          <img src="{{ asset('/images/accessory2.jpg') }}" class="d-block" alt="accessory2.jpg">
+          <img src="{{ asset('/images/accessory.jpg') }}" class="d-block" alt="アクセサリー">
         </div>
         <div class="carousel-item">
-          <img src="{{ asset('/images/denim1.jpg') }}" class="d-block" alt="denim1.jpg">
+          <img src="{{ asset('/images/denim1.jpg') }}" class="d-block" alt="デニム1.jpg">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">

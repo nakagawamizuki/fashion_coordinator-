@@ -12,4 +12,9 @@ class ToppagesController extends Controller
         // viewの呼び出し
         return view('welcome');
     }
+    
+    public function top(){
+        // viewの呼び出し
+        return view('welcome');
+    }
 }
