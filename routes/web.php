@@ -38,6 +38,8 @@ Route::group(['middleware' => ['auth']], function () {
     
     // ログアウト
     Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
+    // 画像投稿関係
+    Route::resource('posts', 'PostsController');
 
 });
 

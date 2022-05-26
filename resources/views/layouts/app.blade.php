@@ -30,7 +30,7 @@
                   <a href="#" class="nav-link">お気に入り</a>
                 </li>
                 <li class="nav-item active">
-                  <a href="#" class="nav-link">投稿</a>
+                  <a href="/posts/create" class="nav-link">投稿</a>
                 </li>
                 <li class="nav-item active">
                   <a href="#" class="nav-link">お問い合わせ</a>
