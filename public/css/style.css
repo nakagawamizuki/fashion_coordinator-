@@ -75,7 +75,7 @@ h1 {
     text-align: center;
     color: white;
     background-color: #00000059;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 input#inputName {
@@ -255,11 +255,11 @@ html,
 }
 
 .text-center {
-  display: flex;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #f5f5f5;
+    /* display: contents; */
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* background-color: #f5f5f5; */
 }
 
 .form-signin {
@@ -285,6 +285,10 @@ html,
 
 button.w-100.btn.btn-lg {
     background-color: grey;
+}
+
+h2.worries {
+    text-align: center;
 }
 
 

@@ -1,27 +1,23 @@
 @extends('layouts.app')
 @section('title', 'ログイン')
 @section('content')
-    <div class="text-center">
-        <h1>ログイン</h1>
-    </div>
+    
 
-    <div class="row">
-        <div class="col-sm-6 offset-sm-3">
-
-            <form action="/login" method="POST">
-                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                <div class="form-group">
-                    <label for="email">メールアドレス</label>
-                    <input type="email" name="email" class="form-control" id="email">
-                </div>
-
-                <div class="form-group">
-                    <label for="password">パスワード</label>
-                    <input type="password" name="password" class="form-control"  id="password">
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-block">ログイン</button>
-            </form>
-        </div>
-    </div>
+    <main class="form-signin w-100 m-auto">
+        <form>
+          <!--<img class="mb-4" src="../images/bootstrap-logo.svg" alt="" width="72" height="57" loading="lazy">-->
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="メールアドレス">
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="パスワード">
+          </div>
+          <div class="form-check mb-3">
+            <label>
+              <input type="checkbox" value="remember-me">情報を保存する
+            </label>
+          </div>
+          <button class="w-100 btn btn-lg" type="submit">サインイン</button>
+       </form>
+      </main>
 @endsection
