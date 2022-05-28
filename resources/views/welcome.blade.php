@@ -19,7 +19,7 @@
     </div>
     <div class="signup">
       <h3>
-        <a href="/signup">新規会員登録</a>
+        <a href="/signup">GO!!</a>
       </h3>
     </div>
 @endsection

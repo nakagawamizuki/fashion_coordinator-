@@ -33,14 +33,14 @@
                           <a href="/posts/create" class="nav-link">投稿</a>
                         </li>
                         <li class="nav-item active">
-                          <a href="#" class="nav-link">投稿一覧</a>
+                          <a href="">投稿一覧</a>
                         </li>
                         <li class="nav-item active">
                           <a href="#" class="nav-link">お問い合わせ</a>
                         </li>
                       @else
                         <li class="nav-item active">
-                          <a href="#" class="nav-link">マイページ</a>
+                          <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/companymypage.html" class="nav-link">マイページ</a>
                         </li>
                         <li class="nav-item active">
                           <a href="#" class="nav-link">メッセージ</a>
@@ -53,12 +53,12 @@
                     <a href="/logout" class="nav-link">ログアウト</a>
                   </li>
                   @else
-                  <!--<li class="nav-item active">-->
-                  <!--  <a href="/login" class="nav-link">ログイン</a>-->
-                  <!--</li>-->
-                  <!--<li class="nav-item active">-->
-                  <!--  <a href="/signup" class="nav-link">新規会員登録</a>-->
-                  <!--</li>-->
+                  <li class="nav-item active">
+                    <a href="/login" class="nav-link">ログイン</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a href="/signup" class="nav-link">新規会員登録</a>
+                  </li>
                 　@endif
                 </ul>
               </div>

@@ -74,7 +74,7 @@ class PostsController extends Controller
         \Auth::user()->posts()->create(['title' => $title, 'content' => $content, 'image' => $image]);
         
         // トップページへリダイレクト
-        return redirect('/top')->with('flash_message', '新規画像投稿を完了しました。');
+        return redirect('/top')->with('flash_message', '投稿を完了しました。');
     }
 
     /**

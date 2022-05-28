@@ -4,8 +4,8 @@
     
 
     <main class="form-signin w-100 m-auto">
-        <form>
-          <!--<img class="mb-4" src="../images/bootstrap-logo.svg" alt="" width="72" height="57" loading="lazy">-->
+        <form method="POST" action="/login">
+          <input type="hidden" name="_token" value="{{ csrf_token() }}">
           <div class="form-floating">
             <input type="email" class="form-control" id="floatingInput" placeholder="メールアドレス">
           </div>
@@ -18,6 +18,9 @@
             </label>
           </div>
           <button class="w-100 btn btn-lg" type="submit">サインイン</button>
-       </form>
+          <hr>
+          <button class="w-100 btn btn-lg" type="submit">
+            <a href="/signup">新規会員登録</a></button>
+        </form>
       </main>
 @endsection

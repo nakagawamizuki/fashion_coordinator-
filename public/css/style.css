@@ -72,9 +72,10 @@ h3 {
 }
 
 h1 {
+    margin-top: 55px;
     text-align: center;
     color: white;
-    background-color: #00000059;
+    background-color: black;
     /* margin-top: 50px; */
 }
 
@@ -169,7 +170,7 @@ button.btn.btn-primary {
     margin-bottom: 30px;
     border: none;
     color: #6a6767;
-    background-color: #80808087;
+    background-color: black;
 }
 
 h1.summer {
@@ -289,6 +290,37 @@ button.w-100.btn.btn-lg {
 
 h2.worries {
     text-align: center;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+}
+
+input#title {
+    border-color: black;
+}
+
+textarea#content {
+    border-color: black;
+}
+
+input#content {
+    border-color: black;
 }
 
 
