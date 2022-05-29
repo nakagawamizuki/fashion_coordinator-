@@ -19,7 +19,7 @@
     </div>
     <div class="signup">
       <h3>
-        <a href="/signup">GO!!</a>
+        <a href="/signup" class="btn btn-primary">GO!!</a>
       </h3>
     </div>
 @endsection
