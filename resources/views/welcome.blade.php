@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('title', '自作サービス')
 @section('content')
-    <div class="top">
+    <div  class="top">
             <h2 class="worries">こんな悩みはありませんか？</h2>
             <p>買ったけど何に合わせていいかわからない、何年もクローゼットの奥底に眠っていて肥やしになっている
             <br>好きでよく着ているけど毎回同じ着こなしになってしまう
             <br>そんな悩みの服を1着は持っていると思います</p>
             
-            <h2 class="worries">あと、こんな悩みもありませんか？</h2>
+            <h2 class="worries">あと、<br>こんな悩みもありませんか？</h2>
             <p>相談したいけど店員さんと話すのが苦手、服を持っていって聞くのは恥ずかしい、子育てや仕事で時間がない
             <br>こう思っている方も多いと思います。
             <br>ですが、〇〇を使えばいつでもどこでも相談できます！
@@ -18,8 +18,8 @@
             <br>まずは会員登録から始めましょう♪</p>
     </div>
     <div class="signup">
-      <h3>
-        <a href="/signup" class="btn btn-primary">GO!!</a>
+      <h3 class="go">
+        <a href="/signup" class="btn btn-primary w-50">GO!!</a>
       </h3>
     </div>
 @endsection
