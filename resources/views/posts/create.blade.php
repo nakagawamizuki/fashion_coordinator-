@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', '新規画像投稿')
+@section('title', '新規投稿')
 @section('content')
     <div class="text-center">
         <h1>新規投稿</h1>
