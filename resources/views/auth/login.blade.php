@@ -1,16 +1,14 @@
-@extends('layouts.app')
+@extends('layouts.basic')
 @section('title', 'ログイン')
 @section('content')
-    
-
-    <main class="form-signin w-100 m-auto">
+      <main class="form-signin w-100 m-auto">
         <form method="POST" action="/login">
           <input type="hidden" name="_token" value="{{ csrf_token() }}">
           <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="メールアドレス">
+            <input type="email" class="form-control" id="floatingInput"  name="email" placeholder="メールアドレス">
           </div>
           <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="パスワード">
+            <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="パスワード">
           </div>
           <div class="form-check mb-3">
             <label>

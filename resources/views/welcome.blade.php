@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.basic')
 @section('title', '自作サービス')
 @section('content')
     <div  class="top">
@@ -22,4 +22,5 @@
         <a href="/signup" class="btn btn-primary w-50">GO!!</a>
       </h3>
     </div>
+    
 @endsection

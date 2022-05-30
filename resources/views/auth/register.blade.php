@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.basic')
 @section('title', '新規会員登録')
 @section('content')
     <div class="text-center">
