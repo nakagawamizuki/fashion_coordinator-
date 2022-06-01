@@ -18,8 +18,8 @@
                     {!! Form::textarea('content',  $post->content ? $post->content : old('content'), ['class' => 'form-control']) !!}
                 </div>
                 <div class="form-group">
-                    {!! Form::label('content', '希望のスタイル') !!}
-                    {!! Form::text('content',  old('content'), ['class' => 'form-control']) !!}
+                    {!! Form::label('style', '希望のスタイル') !!}
+                    {!! Form::text('style', $post->style ? $post->style : old('style'), ['class' => 'form-control']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('image', '相談したい服') !!}

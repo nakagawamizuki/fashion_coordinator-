@@ -41,6 +41,11 @@ Route::group(['middleware' => ['auth']], function () {
     // 画像投稿関係
     Route::resource('posts', 'PostsController');
 
+     // ログインしている人の投稿一覧を表示
+    Route::get('myposts', 'PostsController@myposts')->name('my.posts');
+    
+    // プロフィール関係
+    Route::resource('profiles', 'ProfilesController');
 });
 
 

@@ -33,7 +33,7 @@
                           <a href="/posts/create" class="nav-link">投稿</a>
                         </li>
                         <li class="nav-item active">
-                          <a href="">投稿一覧</a>
+                          <a href="/myposts" class="nav-link">投稿一覧</a>
                         </li>
                         <li class="nav-item active">
                           <a href="#" class="nav-link">お問い合わせ</a>

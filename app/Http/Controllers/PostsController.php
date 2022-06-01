@@ -16,7 +16,13 @@ class PostsController extends Controller
     {
         //
     }
-
+    
+    public function myposts(){
+        $posts = \Auth::user()->posts()->get();
+        // dd($posts);
+        return view('posts.myposts', compact('posts'));
+    }
+    
     /**
      * Show the form for creating a new resource.
      *
@@ -43,6 +49,7 @@ class PostsController extends Controller
         $this->validate($request, [
             'title' => 'required',
             'content' => 'required',
+            'style' => 'required',
             'image' => [
                 'required',
                 'file',
@@ -53,6 +60,7 @@ class PostsController extends Controller
         // 入力情報の取得
         $title = $request->input('title');
         $content = $request->input('content');
+        $style = $request->input('style');
         $file =  $request->image;
         
         // 画像のアップロード
@@ -71,7 +79,7 @@ class PostsController extends Controller
         
         
         // 入力情報をもとに新しいインスタンス作成
-        \Auth::user()->posts()->create(['title' => $title, 'content' => $content, 'image' => $image]);
+        \Auth::user()->posts()->create(['title' => $title, 'content' => $content, 'style' => $style, 'image' => $image]);
         
         // トップページへリダイレクト
         return redirect('/top')->with('flash_message', '投稿を完了しました。');
@@ -85,7 +93,8 @@ class PostsController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        // dd($post);
+        return view('posts.show', compact('post'));
     }
 
     /**
@@ -120,6 +129,7 @@ class PostsController extends Controller
             $this->validate($request, [
                 'title' => 'required',
                 'content' => 'required',
+                'style' => 'required',
                 'image' => [
                     'file',
                     'mimes:jpeg,jpg,png'
@@ -129,6 +139,7 @@ class PostsController extends Controller
             // 入力情報の取得
             $title = $request->input('title');
             $content = $request->input('content');
+            $style = $request->input('style');
             $file =  $request->image;
             
             // 画像アップロード
@@ -149,6 +160,7 @@ class PostsController extends Controller
             // 入力情報をもとにインスタンス情報の更新
             $post->title = $title;
             $post->content = $content;
+            $post->style = $style;
             $post->image = $image;
     
             // データベース更新

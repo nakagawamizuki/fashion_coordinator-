@@ -7,7 +7,7 @@ use App\User; // 追加
 
 class Post extends Model
 {
-    protected $fillable = ['user_id', 'title', 'content', 'content', 'image',];
+    protected $fillable = ['user_id', 'title', 'content', 'style', 'image',];
     
     /**
      * この投稿を所有するユーザ。（ Userモデルとの多対1の関係を定義）

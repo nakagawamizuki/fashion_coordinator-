@@ -34,7 +34,13 @@ class ToppagesController extends Controller
     
     public function top(){
         if(\Auth::user()->role === 1){
-            return view('admin_top');
+            // プロフィールがまだない場合
+            if(\Auth::user()->profile()->get()->first() === null){
+                return redirect('profiles/create');
+            }else{
+                return view('admin_top');
+            }
+            
         }else{
             // viewの呼び出し
             return view('top');

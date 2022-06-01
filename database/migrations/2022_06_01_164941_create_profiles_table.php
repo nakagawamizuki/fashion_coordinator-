@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostsTable extends Migration
+class CreateProfilesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,15 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::create('profiles', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('user_id');
-            $table->string('title');
-            $table->text('content');
-            $table->string('style');
-            $table->string('image');
+            $table->unsignedBigInteger('user_id')->unique();
+            $table->string('nickname');
+            $table->string('birthday');
+            $table->integer('height');
+            $table->string('style')->nullable();
+            $table->string('comment')->nullable();
+            $table->string('phone')->nullable();
             $table->timestamps();
 
             // 外部キー制約
@@ -34,6 +36,6 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('profiles');
     }
 }
