@@ -17,6 +17,7 @@
     </ul>
     <div class="carousel-inner">
         <div class="carousel-itemactive">
+          <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/summerstyle.html"></a>
             <img src="images/summer.JPEG" class="d-block" alt="夏">
         </div>
         <div class="carousel-item">
@@ -82,8 +83,4 @@
         </li>
       </ul>
     </div>
-    <div>
-      <h2>ランキング</h2>
-      <!--いいね数が多いランキング-->
-</div>
 @endsection

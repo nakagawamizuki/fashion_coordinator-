@@ -36,7 +36,7 @@
                           <a href="/myposts" class="nav-link">投稿一覧</a>
                         </li>
                         <li class="nav-item active">
-                          <a href="#" class="nav-link">お問い合わせ</a>
+                          <a href="#" class="nav-link">メッセージ</a>
                         </li>
                       @else
                         <li class="nav-item active">

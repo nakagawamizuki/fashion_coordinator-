@@ -72,11 +72,10 @@ h3 {
 }
 
 h1 {
-    margin-top: 55px;
+    margin-top: 100px;
     text-align: center;
     color: white;
     background-color: black;
-    /* margin-top: 50px; */
 }
 
 input#inputName {
@@ -90,53 +89,51 @@ input#inputKanaName {
 }
 
 input#inputNickname {
-    background-color: #8080801c;
-    border-color: white;
+    border-color: black;
 }
 
 input#inputEmail {
-    background-color: #8080801c;
-    border-color: white;
+    border-color: black;
 }
 
 input#inputPhonenumber {
-    background-color: #8080801c;
-    border-color: white;
+    border-color: black;
 }
 
 input#inputPassword {
-    background-color: #8080801c;
-    border-color: white;
+    border-color: black;
 }
 
 input#inputPasswordAgain {
-    background-color: #8080801c;
-    border-color: white;
+    border-color: black;
 }
 
 select#inputGender {
-    background-color: #8080801c;
-    border-color: white;
+    border-color: black;
 }
 
 input#inputBirthday {
-    background-color: #8080801c;
-    border-color: white;
+    border-color: black;
 }
 
 input#inputHeight {
-    background-color: #8080801c;
-    border-color: white;
+    border-color: black;
 }
 
 input#inputCode {
-    background-color: #8080801c;
-    border-color: white;
+    border-color: black;
 }
 
 input#inputCompany {
-    background-color: #8080801c;
-    border-color: white;
+    border-color: black;
+}
+
+input#inputStyle {
+    border-color: black;
+}
+
+input#inputMessage {
+    border-color: black;
 }
 
 h1.service {
@@ -256,11 +253,11 @@ html,
 }
 
 .text-center {
-    /* display: contents; */
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    /* background-color: #f5f5f5; */
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
 }
 
 .form-signin {
@@ -288,50 +285,66 @@ button.w-100.btn.btn-lg {
     background-color: grey;
 }
 
-h2.worries {
-    margin-top: 100px;
-    margin-bottom: 95px;
-    text-align: center;
-    font-size: 75px;
-}
-
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid black;
-}
-
 a {
-    color: black;
+    color: white;
     text-decoration: none;
-    background-color: transparent;
-}
-
-.btn-primary {
-    color: #fff;
     background-color: black;
-    border-color: black;
 }
 
-input#title {
-    border-color: black;
+.styles {
+    display: flex;
 }
 
-textarea#content {
-    border-color: black;
+img.greenpants {
+    width: 35%;
+    overflow: hidden;
+    position: relative;
 }
 
-input#content {
-    border-color: black;
+img.blueskirt {
+    width: 25%;
+    overflow: hidden;
+    position: relative;
 }
 
-h3.go {
+img.pinkskirt {
+    width: 25%;
+    overflow: hidden;
+    position: relative;
+}
+
+img.greenpants1 {
+    width: 25%;
+    overflow: hidden;
+    position: relative;
+}
+
+h1.summercolor {
     margin-top: 30px;
-    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: lawngreen;
 }
 
+h2.colorbottoms {
+    text-align: center;
+}
 
+h3.pantsstyle {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+h3.skirtstyle {
+    margin-top: 70px;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+p.sentence {
+    margin-top: 70px;
+    font-size: 25px;
+}
 /* パソコン、タブレット */
 /** {*/
 /*    margin: 0;*/

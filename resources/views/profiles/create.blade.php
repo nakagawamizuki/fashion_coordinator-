@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'プロフィール登録')
+@section('title', 'マイページ')
 @section('content')
     　<h1>マイページ</h1>
       <!--登録された情報も表示されまだ登録していない情報も登録できる、編集できるようにする-->

@@ -1,22 +1,22 @@
 @extends('layouts.app')
 @section('content')
     <div class="text-center">
-        <h1>投稿ID: {{ $post->id }} の詳細</h1>
+        <h1>投稿No: {{ $post->id }} の詳細</h1>
     </div>
     <table class="table table-bordered table-striped">
         <tr>
-            <th>ID</th>
-            <th>名前</th>
+            <th>No</th>
             <th>タイトル</th>
-            <th>内容</th>
+            <th>相談したいこと</th>
+            <th>希望のスタイル</th>
             <th>画像</th>
             <th>投稿日時</th>
         </tr>
         <tr>
             <td>{{ $post->id }}</td>
-            <td>{{ $post->user->name }}</td>
             <td>{{ $post->title }}</td>
             <td>{{ $post->content }}</td>
+            <td>{{ $post->style }}</td>
             <td><img src="{{ asset('uploads')}}/{{$post->image}}" alt="{{ $post->image }}"></td>
             <td>{{ $post->created_at }}</td>
         </tr>
