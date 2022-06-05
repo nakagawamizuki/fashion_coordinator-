@@ -282,7 +282,8 @@ html,
 }
 
 button.w-100.btn.btn-lg {
-    background-color: grey;
+    background-color: black;
+    color: white;
 }
 
 a {
@@ -344,6 +345,43 @@ h3.skirtstyle {
 p.sentence {
     margin-top: 70px;
     font-size: 25px;
+}
+
+h2.worries {
+    margin-bottom: 45px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.btn-primary {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: black;
+    border-color: black;
+}
+
+input#floatingInput {
+    border-color: black;
+}
+
+input#floatingPassword {
+    border-color: black;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgb(0 0 0);
+}
+
+a.navbar-brand {
+    background: none;
+}
+
+a.nav-link {
+    background: none;
 }
 /* パソコン、タブレット */
 /** {*/
