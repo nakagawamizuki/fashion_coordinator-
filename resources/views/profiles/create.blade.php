@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'マイページ')
 @section('content')
-    　<h1>マイページ</h1>
+    　<h1 class="mypage">マイページ</h1>
       <!--登録された情報も表示されまだ登録していない情報も登録できる、編集できるようにする-->
       <form>
           <div class="form-group">
@@ -24,7 +24,7 @@
           <label for="inputPhonenumber">ひとこと</label>
           <input type="text" class="form-control" id="inputMessage" placeholder="ユーザーの方へひとこと" required="required">
         </div>
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" class="btn btn-primary change">
           <!--【変更する】を押すと変更画面に移行-->
           <a href="#">変更する</a></button>
       </form>

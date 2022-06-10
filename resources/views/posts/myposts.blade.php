@@ -1,8 +1,8 @@
 @extends('layouts.app')
-@section('title',  '投稿一覧')
+@section('title',  '質問一覧')
 @section('content')
     <div class="text-center">
-        <h1>投稿一覧</h1>
+        <h1>質問一覧</h1>
         <div class="row mt-3">
             <table class="table table-bordered table-striped">
                 <tr>

@@ -1,8 +1,8 @@
 @extends('layouts.app')
-@section('title', '投稿ID: ' . $post->id . 'の編集')
+@section('title', '投稿No. ' . $post->id . 'の編集')
 @section('content')
     <div class="text-center">
-        <h1>投稿ID:  {{ $post->id }}の編集</h1>
+        <h1>投稿No.  {{ $post->id }}の編集</h1>
     </div>
 
     <div class="row">

@@ -42,7 +42,7 @@
   </button>
 </div>
 <div>
-  <h2>イチオシ</h2>
+  <h2 class="recommendation">イチオシ</h2>
   <ul id="onepress">
     <li class="one">
       <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/tshirt.html">

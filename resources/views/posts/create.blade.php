@@ -2,7 +2,7 @@
 @section('title', '新規投稿')
 @section('content')
     <div class="text-center">
-        <h1>新規投稿</h1>
+        <h1 class="new">質問一覧</h1>
     </div>
 
     <div class="row">
