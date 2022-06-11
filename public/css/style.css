@@ -438,7 +438,7 @@ h1.mypage {
 }
 
 .field {
-    width: 50%;
+    width: 40%;
     height: 100vh;
     padding: 7px 0 14px;
     box-sizing: border-box;
@@ -458,7 +458,7 @@ h1.mypage {
 
 input.chat-input {
     height: 40px;
-    width: 200%;
+    width: 350px;
     display: block;
     font-size: 14px;
     box-sizing: border-box;
@@ -466,8 +466,9 @@ input.chat-input {
     border-radius: 4px;
     padding-left: 10px;
     margin: 0 auto;
-    margin-top: 3px;
+    margin-top: 12px;
     margin-right: 20px;
+    margin-left: -65px;
 }
 
 input.chat-input:focus {
@@ -476,10 +477,10 @@ input.chat-input:focus {
 }
 
 input.chat-button {
-    /* cursor: pointer; */
     height: 40px;
-    width: 50%;
+    width: 30%;
     margin: auto;
+    margin-top: 12px;
     /* margin-right: 7%; */
     font-size: 13px;
     background-color: black;
@@ -568,6 +569,10 @@ chat-left::before{
 
 .right {
     text-align: right;
+}
+
+form {
+    display: flex;
 }
 /* パソコン、タブレット */
 /** {*/
