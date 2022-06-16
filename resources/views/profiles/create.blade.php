@@ -25,7 +25,6 @@
           <input type="text" class="form-control" id="inputMessage" placeholder="ユーザーの方へひとこと" required="required">
         </div>
         <button type="submit" class="btn btn-primary change">
-          <!--【変更する】を押すと変更画面に移行-->
           <a href="#">変更する</a></button>
       </form>
 @endsection

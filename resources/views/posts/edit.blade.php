@@ -22,7 +22,7 @@
                     {!! Form::text('style', $post->style ? $post->style : old('style'), ['class' => 'form-control']) !!}
                 </div>
                 <div class="form-group">
-                    {!! Form::label('image', '相談したい服') !!}
+                    {!! Form::label('image', '相談したい洋服') !!}
                     {!! Form::file('image') !!}
                 </div>
 
