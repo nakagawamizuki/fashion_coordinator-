@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', '会員制写真投稿サイト')
+@section('title', 'famatching')
 @section('content')
 お店トップです。
 @endsection

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', '会員制写真投稿サイト')
+@section('title', 'famatching')
 @section('content')
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
@@ -45,44 +45,19 @@
   <h2 class="recommendation">イチオシ</h2>
   <ul id="onepress">
     <li class="one">
-      <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/tshirt.html">
+      <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/tshirt.html" class="one1">
       <img src="images/Tshirt.JPEG" alt="Tシャツ">
       </a>
     </li>
     <li class="one">
-      <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/denim.html">
+      <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/denim.html" class="one1">
       <img src="images/denim1.jpg" alt="デニム">
       </a>
     </li>
     <li class="one">
-      <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/accessory.html">
+      <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/accessory.html" class="one1">
       <img src="images/accessory.JPEG" alt="アクセサリー">
       </a>
-    </li>
-  </ul>
-</div>
-<div class="category">
-  <h2>カテゴリから探す</h2>
-  <ul class="category">
-    <li>
-      <img src="images/whiteT.jpg" alt="トップス">
-      <h3>トップス</h3>
-    </li>
-    <li>
-      <img src="images/denim.jpeg" alt="パンツ">
-      <h3>パンツ</h3>
-    </li>
-    <li>
-      <img src="images/skirt.webp" alt="スカート">
-      <h3>スカート</h3>
-    </li>
-    <li>
-      <img src="images/dress.webp" alt="ワンピース">
-      <h3>ワンピース</h3>
-    </li>
-    <li>
-      <img src="images/coat.webp" alt="アウター">
-      <h3>アウター</h3>
     </li>
   </ul>
 </div>

@@ -13,7 +13,7 @@
         <header>
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
               <!-- ホームへ戻るリンク。ブランドロゴなどを置く。 -->
-              <a href="/" class="navbar-brand">P&amp;K</a>
+              <a href="/" class="navbar-brand">famatching</a>
               <!-- 横幅が狭いときに出るハンバーガーボタン -->
               <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-bar">
                 <span class="navbar-toggler-icon"></span>
@@ -25,9 +25,6 @@
                       @if(Auth::user()->role === 2)
                       　<li class="nav-item active">
                           <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/mypage.html" class="nav-link">マイページ</a>
-                        </li>
-                        <li class="nav-item active">
-                          <a href="#" class="nav-link">お気に入り</a>
                         </li>
                         <li class="nav-item active">
                           <a href="/posts/create" class="nav-link">質問する</a>

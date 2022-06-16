@@ -10,11 +10,6 @@
           <div class="form-floating">
             <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="パスワード">
           </div>
-          <div class="form-check mb-3">
-            <label>
-              <input type="checkbox" value="remember-me">情報を保存する
-            </label>
-          </div>
           <button class="w-100 btn btn-lg" type="submit">サインイン</button>
           <hr>
           <button class="w-100 btn btn-lg" type="submit">

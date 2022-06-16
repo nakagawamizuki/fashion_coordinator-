@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', '新規投稿')
+@section('title', '質問一覧')
 @section('content')
     <div class="text-center">
         <h1 class="new">質問一覧</h1>

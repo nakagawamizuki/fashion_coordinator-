@@ -7,6 +7,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Post;
 use App\Profile;
+use App\Chat;
 
 class User extends Authenticatable
 {
@@ -38,6 +39,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // Profileモデルと1対1のリレーションを張る
+    public function profile()
+    {
+        // Profileモデルのデータを引っ張てくる
+        return $this->hasOne(Profile::class);
+    }
     
     /**
      * このユーザーが所有する投稿一覧（ Postモデルとの1対多の関係を定義）
@@ -52,5 +60,22 @@ class User extends Authenticatable
     {
         // Profileモデルのデータを引っ張てくる
         return $this->hasOne(Profile::class);
+    }
+    
+    /**
+     * このユーザーが所有するコメント一覧（Chatモデルとの1対多の関係を定義）
+     */
+    public function chats(){
+        return $this->hasMany(Chat::class);
+    }
+    
+    // コメント投稿
+    public function add_chat($post_id, $content){
+        $comment = new Chat();
+        $comment->user_id = $this->id;
+        $comment->post_id = $post_id;
+        $comment->content = $content;
+        $comment->save();
+        
     }
 }
