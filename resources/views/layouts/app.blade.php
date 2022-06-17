@@ -43,7 +43,7 @@
                           <a href="#" class="nav-link">メッセージ</a>
                         </li>
                         <li class="nav-item active">
-                          <a href="#" class="nav-link">お客一覧</a>
+                          <a href="/myposts" class="nav-link">お客一覧</a>
                         </li>
                       @endif
                   <li class="nav-item">

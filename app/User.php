@@ -55,13 +55,6 @@ class User extends Authenticatable
         return $this->hasMany(Post::class);
     }
     
-    // Profileモデルと1対1のリレーションを張る
-    public function profile()
-    {
-        // Profileモデルのデータを引っ張てくる
-        return $this->hasOne(Profile::class);
-    }
-    
     /**
      * このユーザーが所有するコメント一覧（Chatモデルとの1対多の関係を定義）
      */
