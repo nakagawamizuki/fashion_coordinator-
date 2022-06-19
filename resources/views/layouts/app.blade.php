@@ -13,7 +13,7 @@
         <header>
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
               <!-- ホームへ戻るリンク。ブランドロゴなどを置く。 -->
-              <a href="/" class="navbar-brand">famatching</a>
+              <a href="/" class="navbar-brand">fatching</a>
               <!-- 横幅が狭いときに出るハンバーガーボタン -->
               <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-bar">
                 <span class="navbar-toggler-icon"></span>

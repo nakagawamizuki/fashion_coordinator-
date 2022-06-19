@@ -443,7 +443,44 @@ th {
 .table-bordered {
     border: none;
 }
-チャット
+
+table.table.table-bordered.table-striped {
+    table-layout: fixed;
+}
+
+a.offset-sm-4.col-sm-4.btn.btn-primaryr {
+    color: white;
+    background-color: black;
+}
+
+button.btn.btn-primaryr {
+    border: solid;
+    color: white;
+    background-color: black;
+}
+
+button.send {
+    color: white;
+    background-color: black;
+    border: black;
+}
+/*チャット*/
+
+.chatroom_border {
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+.chat_border {
+    border: solid 1px black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.chat_botton {
+    height: 50px;
+}
+
 *{
     margin: 0;
     padding: 0;

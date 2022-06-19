@@ -17,12 +17,12 @@
           <input type="number"  name="height" min="100" max="200" class="form-control" id="inputHeight" placeholder="〇〇cm" required="required">
         </div>
         <div class="form-group">
-          <label for="inputPhonenumber">得意なスタイル</label>
-          <input type="text" name="style" class="form-control" id="inputStyle" placeholder="大人カジュアル/キレイめ etc..." required="required">
+          <label for="inputPhonenumber">電話番号</label>
+          <input type="tel" name="phone" class="form-control" id="inputStyle" placeholder="電話番号" required="required">
         </div>
         <div class="form-group">
           <label for="inputPhonenumber">ひとこと</label>
-          <input type="text" name="comment" class="form-control" id="inputMessage" placeholder="ユーザーの方へひとこと" required="required">
+          <input type="text" name="comment" class="form-control" id="inputMessage" placeholder="お店の方へひとこと" required="required">
         </div>
         <button type="submit" class="btn btn-primary change">変更する</button>
       </form>

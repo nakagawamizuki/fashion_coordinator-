@@ -31,6 +31,35 @@
         {!! Form::close() !!}
 
     </div>
+    <div class="row mt-3">
+        <table class="offset-sm-4 col-sm-4 table table-borderblack table-striped">
+            <tr>
+                <th>回答者</th>
+            </tr>
+            @foreach($users as $user)
+            <tr>
+                <td><a href="/rooms/{{ $user->room($post->id)->id }}">{{ $user->name }}</a></td>
+            </tr>
+            @endforeach
+        </table>
+    </div>
+    
     @endif
 
+    @if(Auth::user()->role === 1)
+        @if(!$post->is_room_exist(Auth::id()))
+        <div class="row">
+            <form action="/rooms" method="POST" class="offset-sm-5 col-sm-2 row">
+                <input type="hidden" name="post_id" value="{{ $post->id }}">
+                {{ csrf_field() }}
+                <button type="submit" class="btn btn-primaryr">回答ルーム作成</button>
+            </form>
+        </div>
+        @else
+        <div class="row mt-3">
+            <a href="/rooms/{{ $room->id }}" class="offset-sm-4 col-sm-4 btn btn-primaryr">回答ルームへ</a>
+        </div>
+        @endif
+    @endif
+    
 @endsection

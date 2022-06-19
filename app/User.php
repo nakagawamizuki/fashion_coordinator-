@@ -7,7 +7,8 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Post;
 use App\Profile;
-use App\Chat;
+// use App\Chat;
+use App\Room;
 
 class User extends Authenticatable
 {
@@ -55,20 +56,11 @@ class User extends Authenticatable
         return $this->hasMany(Post::class);
     }
     
-    /**
-     * このユーザーが所有するコメント一覧（Chatモデルとの1対多の関係を定義）
-     */
-    public function chats(){
-        return $this->hasMany(Chat::class);
+    
+    // その投稿に紐づいたルームを取得
+    public function room($post_id){
+        $room = Room::where('post_id', $post_id)->get()->first();
+        return $room;
     }
     
-    // コメント投稿
-    public function add_chat($post_id, $content){
-        $comment = new Chat();
-        $comment->user_id = $this->id;
-        $comment->post_id = $post_id;
-        $comment->content = $content;
-        $comment->save();
-        
-    }
 }
