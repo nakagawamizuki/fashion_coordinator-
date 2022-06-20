@@ -13,7 +13,7 @@
         <header class="mb-4">
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
               <!-- ホームへ戻るリンク。ブランドロゴなどを置く。 -->
-              <a href="/" class="navbar-brand">famatching</a>
+              <a href="/" class="navbar-brand">fatching</a>
             </nav>　　
         </header>
 

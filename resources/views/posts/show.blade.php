@@ -38,7 +38,7 @@
             </tr>
             @foreach($users as $user)
             <tr>
-                <td><a href="/rooms/{{ $user->room($post->id)->id }}">{{ $user->name }}</a></td>
+                <td class="respondentbox"><a href="/rooms/{{ $user->room($post->id)->id }}" class="respondent">{{ $user->name }}</a></td>
             </tr>
             @endforeach
         </table>

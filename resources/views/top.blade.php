@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'famatching')
+@section('title', 'fatching')
 @section('content')
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">

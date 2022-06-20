@@ -36,7 +36,7 @@
                 </div>
             @endforeach
             <div class="row">
-                <form action="/rooms/{{ $room->id }}/chats" method="POST">
+                <form action="/rooms/{{ $room->id }}/chats" method="POST" class="">>
                     {{ csrf_field() }}
                     <input type="text" name="message" class="send">
                     <button type="submit" class="send">送信</button>

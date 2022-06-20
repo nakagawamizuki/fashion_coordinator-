@@ -1,5 +1,5 @@
 @extends('layouts.basic')
-@section('title', 'famatching')
+@section('title', 'fatching')
 @section('content')
     <div class="top">
           <h2 class="worries">こんな悩みはありませんか？</h2>

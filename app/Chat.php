@@ -15,11 +15,11 @@ class Chat extends Model
      */
     public function room()
     {
-        return $this->belongTo(Room::class);
+        return $this->belongsTo(Room::class);
     }
-     
+    
     public function user()
     {
-        return $this->belongTo(User::class);
+        return $this->belongsTo(User::class);
     }
 }

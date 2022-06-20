@@ -20,8 +20,6 @@
                     <td>{{ $post->style }}</td>
                     <td>{{ $post->created_at }}</td>
                 </tr>
-                <button type="submit" class="btn btn-primary change">
-                    <a href="#">回答する</a></button>
                 @endforeach
             </table>
         </div>
