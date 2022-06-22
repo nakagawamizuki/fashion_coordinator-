@@ -25,7 +25,16 @@ class RoomsController extends Controller
      */
     public function create()
     {
-        //
+        // 空のメッセージインスタンスを作成
+        $message = new Message();
+        
+        // フラッシュメッセージにnull をセット
+        $flash_message = null;
+        // エラーメッセージにnullをセット
+        $errors = null;
+        
+        // 連想配列のデータを3セット（viewで引き出すキーワードと値のセット）引き連れてviewを呼び出す
+        return view('messages.create', compact('message', 'flash_message', 'errors'));
     }
 
     /**
@@ -39,8 +48,20 @@ class RoomsController extends Controller
         
         $post_id = $request->input('post_id');
         $post = Post::find($post_id);
-        
+        $file = $request->image;
         $post->add_room(\Auth::id());
+        
+        // 画像ファイルが選択されていれば
+        if ($file) { 
+        
+            // 現在時刻ともともとのファイル名を組み合わせてランダムなファイル名作成
+            $image = time() . $file->getClientOriginalName();
+            // アップロードするフォルダ名取得
+            $target_path = public_path('uploads/');
+
+        } else { // ファイルが選択されていなければ
+            $image = null;
+        }
         
         return redirect('/posts/' . $post_id);
         

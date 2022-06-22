@@ -40,7 +40,7 @@ class ChatsController extends Controller
         $user_id = \Auth::id();
         $message = $request->message;
         $chat = $room->chats()->create(compact('user_id', 'message'));
-        return redirect('/room/' . $room->id);
+        return redirect('/rooms/' . $room->id);
     }
 
     

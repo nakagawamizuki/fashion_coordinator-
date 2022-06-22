@@ -1,14 +1,6 @@
 @extends('layouts.app')
 @section('title', 'fatching')
 @section('content')
-<nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="キーワードから探す" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel" data-interval="5000" data-wrap="true" data-pause="false">
   <ul class="carousel-indicators">
     <li data-target="carouselExampleInterval" data-slide-to="0" class="active"></li>
@@ -32,14 +24,6 @@
       </a>  
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <!--<span class="visually-hidden">Previous</span>-->
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <!--<span class="visually-hidden">Next</span>-->
-  </button>
 </div>
 <div>
   <h2 class="recommendation">イチオシ</h2>

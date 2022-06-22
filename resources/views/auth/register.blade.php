@@ -8,11 +8,11 @@
     <div class="row">
         <div class="col-sm-6 offset-sm-3">
 
-            <form method="POST" action="/signup">
+            <form method="POST" action="/signup" class="selection">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                 <div class="form-group">
-                    <p class="control-label">種別</p>
+                    <p class="control-label">お選びください</p>
                     <div class="form-check form-check-inline">
                         <input type="radio" class="form-check-input" name="role" id="role1" value="1" checked>
                         <label class="form-check-label" for="role1">店舗</label>

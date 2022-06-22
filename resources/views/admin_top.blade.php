@@ -11,6 +11,7 @@
                     <th>タイトル</th>
                     <th>相談したいこと</th>
                     <th>希望のスタイル</th>
+                    <th>相談したい洋服</th>
                     <th>投稿日時</th>
                 </tr>
                 @foreach($posts as $post)
@@ -20,9 +21,9 @@
                     <td>{{ $post->title }}</td>
                     <td>{{ $post->content }}</td>
                     <td>{{ $post->style }}</td>
+                    <td><img src="{{ asset('uploads')}}/{{$post->image}}" alt="{{ $post->image }}"></td>
                     <td>{{ $post->created_at }}</td>
                 </tr>
-                <button type="submit" class="btn btn-primary">回答する</button>
                 @endforeach
             </table>
         </div>

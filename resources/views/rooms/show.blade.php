@@ -36,6 +36,9 @@
                 </div>
             @endforeach
             <div class="row">
+                <div class="col-3">
+                    <input type="file" name="image" accept='image/*' onchange="previewImage(this);">
+                </div>
                 <form action="/rooms/{{ $room->id }}/chats" method="POST" class="">>
                     {{ csrf_field() }}
                     <input type="text" name="message" class="send">

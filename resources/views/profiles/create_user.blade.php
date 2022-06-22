@@ -14,7 +14,7 @@
         </div>
         <div class="form-group">
           <label for="inputHeight">身長</label>
-          <input type="number"  name="height" min="100" max="200" class="form-control" id="inputHeight" placeholder="〇〇cm" required="required">
+          <input type="number" name="height" min="100" max="200" class="form-control" id="inputHeight" placeholder="〇〇cm" required="required">
         </div>
         <div class="form-group">
           <label for="inputPhonenumber">電話番号</label>

@@ -47,9 +47,6 @@ Route::group(['middleware' => ['auth']], function () {
     // プロフィール関係
     Route::resource('profiles', 'ProfilesController');
     
-    // キーワード検索
-    Route::get('search', 'PostsController@search')->name('posts.search');
-    
     // ルーム関係
     Route::resource('rooms', 'RoomsController');
     

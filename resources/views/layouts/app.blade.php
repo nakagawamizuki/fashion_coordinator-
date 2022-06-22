@@ -32,18 +32,12 @@
                         <li class="nav-item active">
                           <a href="/myposts" class="nav-link">質問一覧</a>
                         </li>
-                        <li class="nav-item active">
-                          <a href="#" class="nav-link">メッセージ</a>
-                        </li>
                       @else
                         <li class="nav-item active">
                           <a href="https://463562886d4946f2839bc7cc4695e0bb.vfs.cloud9.ap-northeast-1.amazonaws.com/_static/APP/companymypage.html" class="nav-link">マイページ</a>
                         </li>
                         <li class="nav-item active">
-                          <a href="#" class="nav-link">メッセージ</a>
-                        </li>
-                        <li class="nav-item active">
-                          <a href="/myposts" class="nav-link">お客一覧</a>
+                          <a href="" class="nav-link">質問一覧</a>
                         </li>
                       @endif
                   <li class="nav-item">
